@@ -17,3 +17,7 @@ Kalau yield mengirim satu nilai, maka yield* mengirim semua nilai dari stream at
 
 ### Soal 4
 ![Capture soal 4](assets/stream1.gif)
+
+### Soal 5
+**listen()** digunakan untuk respon langsung & berkelanjutan seperti notifikasi, event, atau UI yang terus diperbarui.
+**await for** ketika ingin proses terstruktur, satu per satu, atau ketika memproses data stream secara berurutan.
