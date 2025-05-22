@@ -14,3 +14,6 @@ Kalau yield mengirim satu nilai, maka yield* mengirim semua nilai dari stream at
         - index = t % colors.length akan memutar indeks warna agar tidak keluar dari list.
         - return colors[index]; akan mengambil warna dari list berdasarkan indeks yang diputar.
     3. yield* akan mendelegasikan seluruh isi stream ini, sehingga fungsi getColors menjadi stream juga.
+
+### Soal 4
+![Capture soal 4](assets/stream1.gif)
