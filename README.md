@@ -31,3 +31,14 @@ Menginisialisasi stream listener saat widget pertama kali dibangun, dan menyiapk
 
 2. Langkah 10
 Mengirim angka acak ke stream, yang akan diterima oleh listener di initState(), dan menyebabkan lastNumber diupdate serta UI diperbarui.
+
+### Soal 7
+
+1. Langkah 13
+Method digunakan untuk memasukkan error ke dalam stream menggunakan sink.addError(). "error" adalah nilai error-nya (dalam kasus ini, hanya sebuah string).
+
+2. Langkah 14
+onError(...) adalah callback untuk menangani error saat mendengarkan stream. Ini penting agar aplikasi kamu tidak crash jika terjadi kesalahan pada stream, dan kamu bisa menampilkan sesuatu sebagai penanda error ke pengguna atau developer.
+
+3. Langkah 15
+Method memanggil addError() dari numberStream, yang berarti mengirim error ke dalam stream.

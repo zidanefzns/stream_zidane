@@ -38,6 +38,7 @@ void addRandomNumber() {
     Random random = Random();
     int myNum = random.nextInt(10);
     numberStream.addNumberToSink(myNum);
+    // numberStream.addError();
   }
   
   @override
@@ -54,6 +55,10 @@ void addRandomNumber() {
     stream.listen((event) {
           setState(() {
             lastNumber = event;
+          });
+        }).onError((error) {
+          setState(() {
+            lastNumber = -1;
           });
         });
     super.initState();
