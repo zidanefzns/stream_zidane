@@ -21,3 +21,13 @@ Kalau yield mengirim satu nilai, maka yield* mengirim semua nilai dari stream at
 ### Soal 5
 **listen()** digunakan untuk respon langsung & berkelanjutan seperti notifikasi, event, atau UI yang terus diperbarui.
 **await for** ketika ingin proses terstruktur, satu per satu, atau ketika memproses data stream secara berurutan.
+
+## Praktikum 2
+### Soal 6
+![Capture soal 6](assets/stream2.gif)
+
+1. Langkah 8
+Menginisialisasi stream listener saat widget pertama kali dibangun, dan menyiapkan agar setiap data baru dari stream langsung mengupdate UI dengan setState.
+
+2. Langkah 10
+Mengirim angka acak ke stream, yang akan diterima oleh listener di initState(), dan menyebabkan lastNumber diupdate serta UI diperbarui.
