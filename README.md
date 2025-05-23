@@ -52,3 +52,16 @@ late artinya variabel transformer akan diinisialisasi nanti sebelum digunakan. S
 
 2. Langkah 3
 Menerapkan transformasi ke stream. Output dari stream yang ditransformasi akan berbeda sesuai logika transformer tersebut.
+
+## Praktikum 4
+### Soal 9
+![Capture soal 9](assets/stream4.gif)
+
+1. Langkah 2
+Mengatur stream subscription untuk menerima data dari stream. Ini memungkinkan UI diperbarui secara real-time berdasarkan data dari stream.
+
+2. Langkah 6
+Membersihkan subscription untuk mencegah memory leak.
+
+3. Langkah 8
+Mengirim angka acak ke dalam stream melalui sink. Cek dulu apakah controller masih aktif (belum ditutup). Jika stream sudah ditutup, tampilkan -1 agar user tahu tidak ada data baru yang dikirim.
