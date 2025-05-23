@@ -65,3 +65,12 @@ Membersihkan subscription untuk mencegah memory leak.
 
 3. Langkah 8
 Mengirim angka acak ke dalam stream melalui sink. Cek dulu apakah controller masih aktif (belum ditutup). Jika stream sudah ditutup, tampilkan -1 agar user tahu tidak ada data baru yang dikirim.
+
+## Praktikum 5
+### Soal 10
+Error "Bad state: Stream has already been listened to" terjadi karena mencoba mendengarkan (listen) sebuah Stream lebih dari satu kali, padahal itu bukan broadcast stream.
+
+### Soal 11
+![Capture soal 11](assets/stream5.gif)
+
+Ketika tekan button ‘New Random Number' beberapa kali, maka akan tampil teks angka terus bertambah sebanyak dua kali. Hal ini terjadi karena menambahkan dua listener (listen) pada stream yang sama, setiap kali tombol New Random Number ditekan, 1 angka acak dikirim ke stream — namun karena ada dua listener aktif, maka callback setState dijalankan dua kali, dan nilai angka ditambahkan ke teks sebanyak dua kali.
